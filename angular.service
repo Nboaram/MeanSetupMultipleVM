@@ -1,0 +1,16 @@
+[Unit]
+Description=Angular
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/terraform/TeamAPoolProjectUI/
+ExecStart=/usr/bin/ng serve --host 0.0.0.0
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

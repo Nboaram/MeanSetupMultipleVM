@@ -1,0 +1,15 @@
+[Unit]
+Description=Api
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/node /home/terraform/TeamAPoolProjectBackend/Index.js
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
