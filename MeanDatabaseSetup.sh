@@ -6,4 +6,4 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo cp mongod.conf /etc/mongod.conf
-sudo service mongod start
+sudo service mongod restart

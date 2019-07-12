@@ -31,7 +31,7 @@ echo ////////////////////////////////////////////////////////////////
 echo            Starting API
 echo ////////////////////////////////////////////////////////////////
 cd ~/TeamAPoolProjectBackend
-sudo git checkout Developer 
+sudo git checkout Terraform 
 sudo npm install -y
 sudo systemctl daemon-reload
 sudo systemctl enable api
