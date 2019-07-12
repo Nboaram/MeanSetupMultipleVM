@@ -6,4 +6,4 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo cp /home/terraform/MeanSetupMultipleVM/mongod.conf /etc/mongod.conf
-sudo service mongod restart
+sudo service mongod start
